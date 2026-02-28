@@ -1,0 +1,41 @@
+================================================================================
+3D PAMETNI SAT - UPUTSTVO ZA PROJEKAT
+================================================================================
+
+OBAVEZNO PRE ODBRANE:
+1. Zamenite u main.cpp (prva linija) "Ime Prezime, indeks" sa vasim podacima.
+2. Napravite poluprovidnu sliku sa vasim imenom, prezimenom i indeksom
+   i sacuvajte je kao:  res/student.png
+   (Ako ne postoji, prikazuje se tamna poluprovidna ploca - dodajte svoju sliku.)
+
+KONTROLE:
+- ESC          = izlaz
+- Miš gore/dole = pomeranje kamere (samo gore-dole) - kursor je sakriven dok gledate scenu
+- SPACE        = sat ispred očiju (blokira kameru, prikazuje kursor); SPACE ponovo = sat nazad desno
+- Na ekranu sata (kad je ispred): levi klik DESNA polovina ekrana = sledeći ekran (vreme -> srce -> baterija),
+  levi klik LEVA polovina = prethodni ekran
+- D            = simulacija trčanja - SAMO kad je prikazan ekran za otkucaje srca (prvo SPACE, pa klik desno da dođeš do tog ekrana, pa drži D)
+- 1 / 2       = uključi / isključi testiranje dubine
+- 3 / 4       = uključi / isključi uklanjanje naličja
+
+REDOSLED ZA TRČANJE: 1) Pritisni SPACE (sat dođe ispred), 2) Klikni desnu stranu ekrana da pređeš na ekran "otkucaji srca", 3) Drži taster D.
+
+EKrani sata (kao u 2D):
+- Ekran 1: Vreme HH:MM:SS, strelica desno -> otkucaji srca
+- Ekran 2: EKG, BPM (60-80), D = trčanje; strelica levo/desno; BPM>200 = upozorenje
+- Ekran 3: Baterija (opada 1% na 10s), zelena/žuta/crvena; strelica levo -> otkucaji
+
+ZA BUILD:
+- Otvorite Sablon.sln u Visual Studio, izaberite x64 i Debug/Release, Build.
+- Pokrenite iz foldera V7 (ili kopirajte res/, *.vert, *.frag u output folder).
+
+SADRZAJ EKRANA SATA (kao u 2D):
+- Projekat ucitava teksture iz 2D SmartWatch projekta sa putanje:
+  C:\Users\Asus\Desktop\SmartWatch\Resources\
+  (digit0-9.png, arrow_left.png, arrow_right.png, ekg.png, warning.png,
+   percent.png, bpm_label.png, watch_frame.png)
+- Ako te teksture nisu na toj putanji, mozete kopirati ceo folder
+  SmartWatch\Resources u V7\res\ - tada ce se ucitati iz res/.
+- Ako nijedna nije dostupna, koristi se proceduralni prikaz (cifre i EKG).
+
+================================================================================

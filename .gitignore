@@ -1,0 +1,49 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build directories
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bin/
+obj/
+out/
+
+# MSVC/C++ intermediate and debug files
+*.obj
+*.pdb
+*.ilk
+*.idb
+*.ipch
+*.pch
+*.tlog
+*.lastbuildstate
+*.VC.db
+*.VC.opendb
+
+# Executables and libraries
+*.exe
+*.dll
+*.lib
+*.exp
+
+# NuGet packages (restore via packages.config if needed)
+packages/
+**/packages/
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+*.cache
+
+# CMake (if used later)
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+
