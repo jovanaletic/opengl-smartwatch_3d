@@ -47,3 +47,6 @@ CMakeFiles/
 CMakeCache.txt
 cmake-build-*/
 
+# Keep OBJ assets from project resources (3D models)
+!SmartWatch/res/*.obj
+!SmartWatch/RG_V7_Resenje/V7/res/*.obj
